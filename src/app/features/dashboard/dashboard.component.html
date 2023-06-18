@@ -1,0 +1,26 @@
+<main>
+  <section class="player" [ngClass]="{'player--winner': playerResult === 'win'}">
+    <h2 class="name">Player</h2>
+    <p class="result">{{ playerResult }}</p>
+    <div class="decision">
+      <p class="decision-label">Decision</p>
+      <p class="decision-image">{{ playerImageDecision }}</p>
+    </div>
+  </section>
+  <section class="player" [ngClass]="{'player--winner': cpuResult === 'win'}">
+    <h2 class="name">CPU</h2>
+    <p class="result">{{ cpuResult }}</p>
+    <div class="decision">
+      <p class="decision-label">Decision</p>
+      <p class="decision-image">{{ cpuImageDecision }}</p>
+    </div>
+  </section>
+
+  <button class="btn btn--new" (click)="startNewGame()">🔚 New game</button>
+  <button class="btn btn--rock" (click)="getResult(decision.ROCK)" [disabled]="isDisabled">✊ Rock</button>
+  <button class="btn btn--paper" (click)="getResult(decision.PAPER)" [disabled]="isDisabled">🖐 Paper</button>
+  <button class="btn btn--scissors" (click)="getResult(decision.SCISSORS)" [disabled]="isDisabled">✌️ Scissors</button>
+</main>
+<footer class="footer">
+  <h2 class="footer--text">Crafted by Guillem Martí</h2>
+</footer>
