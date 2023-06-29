@@ -1,0 +1,15 @@
+.loader {
+  position: absolute;
+  left: 47.5%;
+  transform: translateX(-50%);
+  top: 23rem;
+
+  width: 48px;
+  height: 48px;
+  border: 5px solid #c7365f;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}

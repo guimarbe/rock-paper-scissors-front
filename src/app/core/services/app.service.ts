@@ -17,7 +17,7 @@ export class AppService {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("playerDecision", playerDecision);
 
-    return this.http.get<IResultResponse>(url, {params: queryParams});
+    return this.http.get<IResultResponse>(url, { params: queryParams });
   }
 
 }

@@ -1,5 +1,8 @@
+import { Decision } from "./decision.enum";
+import { Result } from "./result.enum";
+
 export interface IResultResponse {
-  playerDecision: string;
-  cpuDecision: string;
-  result: string;
+  playerDecision: Decision;
+  cpuDecision: Decision;
+  result: Result;
 }

@@ -1,9 +1,10 @@
 {
   "name": "rock-paper-scissors",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Guillem Martí",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
